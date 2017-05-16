@@ -1,5 +1,16 @@
 # Github_Map_Closing_Notes
 
+### Cherrypicking
+http://stackoverflow.com/questions/9339429/what-does-cherry-picking-a-commit-with-git-mean
+1) Make sure you are on the branch you want apply the commit to.
+ ```git checkout master```
+2) Execute the following:
+ ```git cherry-pick <commit-hash>```
+
+```git notes copy <fromcommithash> <tocommithash>```
+
+simplify into single command: 
+git checkout branch; git cherry-pick <commit-hash>git notes copy <fromcommithash> <tocommithash> 
 ### how github handles repo names
 ```
 github allows [A-Za-z0-9_.-], and transforms all other characters to "-"
