@@ -1,5 +1,13 @@
 # Github_Map_Closing_Notes
 
+### My development environment remote information for a project
+remote origin commit information can be found in the linked issue:
+<br>https://github.com/Swuber/unf-swuber_web_app_phoenix/issues/4
+
+### Check out the first time I needed to use SVN instead of git.
+neat way I get a part of a repository without the whole enchillada:
+<br>https://github.com/MichaelDimmitt/sc/blob/master/install.sh
+
 ### Cherrypicking
 http://stackoverflow.com/questions/9339429/what-does-cherry-picking-a-commit-with-git-mean
 1) Make sure you are on the branch you want apply the commit to.
