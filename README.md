@@ -8,6 +8,20 @@ remote origin commit information can be found in the linked issue:
 neat way I get a part of a repository without the whole enchillada:
 <br>https://github.com/MichaelDimmitt/sc/blob/master/install.sh
 
+### Updating Forked Repository
+<pre>git remote add upstream https://github.com/whoever/whatever.git;
+git pull upstream master;
+git rebase upstream/master;
+git push -f origin master;
+</pre>
+<b>Alternate</b><br>https://stackoverflow.com/questions/7244321/how-do-i-update-a-github-forked-repository
+<pre>git remote add upstream https://github.com/whoever/whatever.git;
+git fetch upstream master;
+git checkout master;
+git rebase upstream/master;
+git push -f origin master;
+</pre>
+
 ### Cherrypicking
 http://stackoverflow.com/questions/9339429/what-does-cherry-picking-a-commit-with-git-mean
 1) Make sure you are on the branch you want apply the commit to.
