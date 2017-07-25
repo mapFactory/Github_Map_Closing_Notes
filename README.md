@@ -22,6 +22,15 @@ git rebase upstream/master;
 git push -f origin master;
 </pre>
 
+### Git LFS (large files)
+<pre>brew install git-lfs;
+git lfs install;
+git lfs track "*.iso";
+git add .gitattributes;
+git lfs ls-files;
+https://github.com/git-lfs/git-lfs?utm_source=gitlfs_site&utm_medium=repo_link&utm_campaign=gitlfs
+</pre>
+
 ### Cherrypicking
 http://stackoverflow.com/questions/9339429/what-does-cherry-picking-a-commit-with-git-mean
 1) Make sure you are on the branch you want apply the commit to.
