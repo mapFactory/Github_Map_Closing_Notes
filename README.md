@@ -1,5 +1,8 @@
 # Github_Map_Closing_Notes
 
+git add .; git commit --amend --no-edit; git push --force-with-lease;
+
+
 ### My development environment remote information for a project
 remote origin commit information can be found in the linked issue:
 <br>https://github.com/Swuber/unf-swuber_web_app_phoenix/issues/4
