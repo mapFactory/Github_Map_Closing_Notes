@@ -17,6 +17,9 @@ git pull upstream master;
 git rebase upstream/master;
 git push -f origin master;
 </pre>
+In one command:
+<pre>git remote add upstream https://github.com/whoever/whatever.git;git pull upstream master;git rebase upstream/master;git push -f origin master;</pre>
+
 <b>Alternate</b><br>https://stackoverflow.com/questions/7244321/how-do-i-update-a-github-forked-repository
 <pre>git remote add upstream https://github.com/whoever/whatever.git;
 git fetch upstream master;
