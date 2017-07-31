@@ -11,6 +11,11 @@ remote origin commit information can be found in the linked issue:
 neat way I get a part of a repository without the whole enchillada:
 <br>https://github.com/MichaelDimmitt/sc/blob/master/install.sh
 
+### Update a Branch
+<pre>git remote add upstream https://github.com/whoever/whatever.git;
+git rebase upstream/master;
+git push -f origin master;</pre>
+
 ### Updating Forked Repository
 <pre>git remote add upstream https://github.com/whoever/whatever.git;
 git pull upstream master;
