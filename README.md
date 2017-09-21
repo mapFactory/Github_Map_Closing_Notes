@@ -1,6 +1,6 @@
 # Github_Map_Closing_Notes
 
-git add .; git commit --amend --no-edit; git push --force-with-lease;
+do not default to this: `git add .; git commit --amend --no-edit; git push --force-with-lease;`
 
 
 ### My development environment remote information for a project
@@ -106,4 +106,9 @@ git add .
 git commit --amend --author="MichaelDimmitt <michaelgdimmitt@gmail.com>" --no-edit
 git rebase --continue
 git push --force-with-lease
+```
+```
+git revert #moves commit backwords witha new commit. So you could revert a revert.
+git merge --squash <branch_name> #I do not recommend. rebase -i to squash your commits.
+git braanch -vv #this is a nice goodie!
 ```
