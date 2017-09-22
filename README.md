@@ -2,6 +2,11 @@
 
 do not default to this: `git add .; git commit --amend --no-edit; git push --force-with-lease;`
 
+## Of these I am a fan, listed with favorite first!
+1) git log --name-status
+2) git log --pretty=oneline
+3) git log --graph --oneline --decorate --all
+
 
 ### My development environment remote information for a project
 remote origin commit information can be found in the linked issue:
