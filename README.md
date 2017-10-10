@@ -1,5 +1,11 @@
 # Github_Map_Closing_Notes
 
+<pre>
+#the below command is good for beginners. 
+git revert HEAD #undo your commit with a new commit
+ #git revert can be reverted with another git revert. 
+</pre>
+
 do not default to this: `git add .; git commit --amend --no-edit; git push --force-with-lease;`
 
 ## Of these I am a fan, listed with favorite first!
