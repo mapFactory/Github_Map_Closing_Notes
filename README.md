@@ -16,7 +16,7 @@ do not default to this: `git add .; git commit --amend --no-edit; git push --for
 ## Remove a file from git history: [source1](https://dev.to/jenc/removing-accidentally-committed-files-from-remote-history-3acj) [source2](https://stackoverflow.com/questions/2100907/how-to-remove-delete-a-large-file-from-commit-history-in-git-repository/2158271#2158271)
 ```bash
 git filter-branch --prune-empty
-  --index-filter "git rm --cached -f --ignore-unmatch oops.iso" \
+  --index-filter "git rm --cached -rf --ignore-unmatch oops.iso" \
   --tag-name-filter cat -- --all
 ```
 
