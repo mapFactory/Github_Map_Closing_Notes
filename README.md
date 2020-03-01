@@ -13,6 +13,26 @@ do not default to this: `git add .; git commit --amend --no-edit; git push --for
 2) git log --pretty=oneline
 3) git log --graph --oneline --decorate --all
 
+## Remove a file from git history: [source1](https://dev.to/jenc/removing-accidentally-committed-files-from-remote-history-3acj) [source2](https://stackoverflow.com/questions/2100907/how-to-remove-delete-a-large-file-from-commit-history-in-git-repository/2158271#2158271)
+```bash
+git filter-branch --prune-empty
+  --index-filter "git rm --cached -f --ignore-unmatch oops.iso" \
+  --tag-name-filter cat -- --all
+```
+
+## Cleanup last seven: UNTESTED function. [source1](stackoverflow.com/questions/3670355/can-you-delete-multiple-branches-in-one-command-with-git)
+```bash
+function cleanupLastSeven(){
+  git branch --sort=-committerdate | tail -n+7 | tr '\n' ' ' | xargs git branch -D
+}
+```
+## Cleanup specific branches: UNTESTED function.
+```bash
+function cleanupSafeBranches(){
+  branches=$($1 develop)
+  git branch | grep -v $branches | xargs git branch -D
+}
+```
 
 ### My development environment remote information for a project
 remote origin commit information can be found in the linked issue:
