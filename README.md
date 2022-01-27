@@ -20,7 +20,7 @@ git filter-branch --prune-empty
   --tag-name-filter cat -- --all
 ```
 
-## Cleanup last seven: [source1](stackoverflow.com/questions/3670355/can-you-delete-multiple-branches-in-one-command-with-git)
+## Cleanup last seven branches: [source1](stackoverflow.com/questions/3670355/can-you-delete-multiple-branches-in-one-command-with-git)
 ```bash
 function cleanupLastSeven(){
   git branch --sort=-committerdate | tail -n+7 | tr '\n' ' ' | xargs git branch -D
